@@ -1,0 +1,1942 @@
+/* Menu */
+ul#menu ul {
+	width:80px;}
+ul#menu ul {
+ display: none;
+ position: absolute;
+ top: 40px;
+ background-color:#060;
+ color: #fff;
+ padding: 5px 0px 5px 5px;
+ margin: 0;
+ }
+   
+ul#menu ul li{
+ float: left;
+ color: #fff;
+ width:80%;
+ margin:2% 0%;
+}
+  
+  
+ul#menu ul li a{
+ color: #fff !important;
+}
+   
+ul#menu ul li a:hover{
+ color: #fff;
+ cursor:pointer;
+}
+   
+ul#menu li:hover ul ul,ul#menu li:hover ul ul ul,ul#menu li.iehover ul ul,ul#menu li.iehover ul ul ul {
+ display: none;
+ cursor:pointer;
+}
+   
+ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.iehover ul,ul#menu ul li.iehover ul,ul#menu ul ul li.iehover ul {
+ display: block;
+ cursor:pointer;
+}
+
+/* Menu */
+
+html,body {
+    height: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+body {
+    background-color: #fff;
+    background-image: url(../imagenes/img/squares.png);
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    color: #0B0B0B;
+}
+.lazy {
+    background: url(../imagenes/img/loading_16.gif) no-repeat center center;
+}
+.banmsg {
+    padding: 10px;
+    background: #ffe3e3;
+    border-bottom: 1px solid #b80000;
+    color: #b80000;
+}
+b,strong {
+    font-weight: bold;
+}
+i {
+    font-style: italic;
+}
+a:link,a:visited {
+    text-decoration: none;
+}
+hr {
+    height: 1px;
+    border: 0;
+    background: #dbdbdb;
+    width: 75%;
+}
+.Pelicula,.Ova {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    width: 54px;
+    height: 54px;
+    pointer-events: none;
+}
+.Pelicula {
+    background: url(../imagenes/img/peli.png);
+}
+.Ova {
+    background: url(../imagenes/img/ova.png);
+}
+.not {
+    position: relative;
+    z-index: 60;
+    width: 212px;
+    height: 106px;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+.tit_ep {
+    display: block;
+    color: white;
+    line-height: 18px;
+    height: 18px;
+    padding: 5px;
+    background: url(../imagenes/img/negro_semi.png);
+    text-decoration: none;
+    text-shadow: 0 1px 0 black;
+    position: absolute;
+    width: 202px;
+    margin-top: 78px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+}
+.tit_ep .tit {
+    margin-top: 1px;
+    float: left;
+}
+.imglstsr {
+    width: 212px;
+    height: 106px;
+    border-radius: 4px;
+    position: absolute;
+}
+
+#contenedor {
+    width: 1000px;
+    margin:0 auto 0 auto;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background: #fff;
+    min-height: 100%;
+    position: relative;
+}
+
+#header {
+    background: url(../imagenes/img/bg_header.png) #fbfbfb;
+    height: 110px;
+    border-bottom: 3px solid;
+}
+#header a {
+    position: relative;
+    z-index: 60;
+}
+.publi_head {
+    float: right;
+    position: relative;
+    z-index: 60;
+    margin-top: 10px;
+    border: 1px solid #fff;
+}
+#navbar {
+    position: relative;
+    z-index: 70;
+    background: #191919 url(../imagenes/img/bg_nav.png) repeat-x;
+    height: 40px;
+    line-height: 40px;
+	margin:0 auto;
+	width:1000px;
+}
+#navbar ul {
+    float: left;
+}
+#navbar ul li {
+    float: left;
+}
+#navbar ul li.activo {
+    background: #000;
+}
+#navbar ul li.activo a:link,#navbar ul li.activo a:visited {
+    color: #fff;
+}
+#navbar a:link,#navbar a:visited {
+    color: #999;
+    display: block;
+    padding: 0 15px 0 15px;
+}
+#navbar a:hover {
+    color: #fff;
+}
+#navbar .buscador {
+    float: right;
+}
+#contenido {
+    margin: auto;
+    padding-bottom: 50px;
+}
+.sub_bloque {
+}
+.sub_bloque .titulo {
+    background: url(../imagenes/img/bg_sub.gif);
+    height: 38px;
+    line-height: 38px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 0 10px;
+    font-weight: bold;
+    color: #555555;
+}
+.sub_bloque .titulo img {
+    margin-right: 10px;
+}
+.episodio_head {
+    border-bottom: 1px solid #ccc;
+    height: 24px;
+    padding: 10px;
+}
+.episodio_titulo {
+    margin-left: 185px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+.episodio_titulo a {
+    position: relative;
+    z-index: 60;
+}
+.lista_episodios {
+    position: relative;
+    z-index: 60;
+    float: left;
+    margin: -10px;
+    display: block;
+    width: 165px;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+}
+.lista_episodios img {
+    margin-right: 10px;
+}
+.lista_episodios:link,.lista_episodios:visited {
+    color: #000;
+    font-size: 13px;
+    font-weight: bold;
+}
+.episodio_proximamente {
+    margin: 10px auto;
+    background: url(../imagenes/img/happy.jpg) top right no-repeat;
+    padding-right: 150px;
+    width: 500px;
+    height: 200px;
+    font-size: 16px;
+    line-height: 30px;
+    font-smooth: always;
+    padding-top: 50px;
+}
+.episodio_proximamente b {
+    display: block;
+    font-size: 18px;
+}
+.adspl {
+    display: block;
+    width: 344px;
+    height: 288px;
+    z-index: 999;
+    margin-left: auto;
+    margin-right: auto;
+    top: 85px;
+    left: 230px;
+    position: absolute;
+    background-image: url(../imagenes/img/adpl.png);
+    opacity: 0.9;
+}
+#clad {
+    display: block;
+    float: right;
+    width: 22px;
+    height: 22px;
+    margin-top: 1px;
+    margin-right: 3px;
+    position: relative;
+}
+#xdxd {
+    width: 300px;
+    height: 250px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 18px;
+}
+.comentarios_warning {
+    background: #fcf8e3 url(../imagenes/img/com_warn.png) 10px 11px no-repeat;
+    border-bottom: 1px solid #fbeed5;
+    color: #c09853;
+    padding: 13px 0 13px 33px;
+    margin-bottom: -1px;
+    position: relative;
+    z-index: 61;
+}
+#footer {
+    padding-top: 8px;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 38px;
+    background: #303030;
+    background: #000;
+    border-top: 3px solid;
+    line-height: 17px;
+    z-index: 60;
+}
+#footer h3 {
+    width: 900px;
+    height: 17px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#footer .social_foot {
+    margin-top: 0px;
+    float: right;
+}
+#footer span {
+    display: block;
+    color: #878787;
+    font-size: 12px;
+}
+#footer span a:link,#footer span a:visited {
+    color: #878787;
+    text-decoration: none;
+}
+#footer span a:hover {
+    text-decoration: underline;
+}
+#buscador_header {
+    margin-top: 29px;
+    position: relative;
+}
+.blt {
+    float: left;
+}
+.brt {
+    float: right;
+}
+.publi_1 {
+    position: relative;
+    z-index: 60;
+    width: 300px;
+    height: 250px;
+    padding: 11px;
+    background: #000;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+#busqueda_rapida {
+    border-radius: 0;
+    border: 0;
+    height: 40px;
+    line-height: 40px;
+    background: #303030 url(../imagenes/img/bg_buscador.png) repeat-x;
+    padding: 0 10px 0 10px;
+    color: #fff;
+    width: 200px;
+    margin: 0;
+}
+.buscar_icono {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    background: url(../imagenes/img/lupa.png);
+    border: 0;
+    height: 20px;
+    width: 25px;
+}
+.centrar_bloque {
+    width: 980px;
+    margin: auto;
+}
+.frt {
+    float: right;
+}
+.flt {
+    float: left;
+}
+.abox {
+    background: #fafafa;
+}
+.abox h2 {
+    background: #e07206;
+    padding: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+#navegacion_foro {
+    background: #fff url(../imagenes/img/barra_navegacion.gif) repeat-x left;
+    color: #838383;
+    font-size: 0.8em;
+    font-weight: bold;
+    line-height: 33px;
+    height: 33px;
+    border: 1px solid #d6d6d6;
+    padding: 0;
+    clear: both;
+    margin-bottom: 10px;
+}
+#navegacion_foro ul {
+    margin-top: 0px;
+    padding-left: 7px;
+}
+#navegacion_foro ul li {
+    display: block;
+    float: left;
+    background: url(../imagenes/img/barra_separador.gif) no-repeat right top;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+#navegacion_foro a {
+    color: #838383;
+    text-decoration: none;
+    text-shadow: #fff 0px 1px 0px;
+}
+#navegacion_foro a:hover {
+    color: #505050;
+}
+.foro_row:first-child {
+    border-top: 0;
+}
+.foro_row {
+    border-top: 1px solid #ccc;
+    padding: 15px 7px 7px 7px;
+    height: 40px;
+    padding-left: 60px;
+    background: url(../imagenes/img/foro/mensaje.png) no-repeat 7px 7px;
+    color: #565656;
+}
+.tema_row {
+    border-top: 1px solid #ccc;
+    padding: 15px 7px 7px 7px;
+    height: 40px;
+    color: #565656;
+}
+.tema_row .icono {
+    float: left;
+    width: 48px;
+}
+.uresp {
+    float: right;
+    width: 200px;
+}
+.foro_info {
+    margin-top: -4px;
+    float: right;
+    margin-right: 10px;
+}
+.foro_info li {
+    padding: 4px;
+    font-size: 12px;
+    text-align: right;
+}
+.uresp .avatar {
+    margin-top: -6px;
+    background: #fff;
+    padding: 1px;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+}
+.foro_titulo {
+    color: #000;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+.respuesta_row {
+    background: url(../imagenes/img/foro/bg_respuestas.png) repeat-y;
+    border-top: 2px solid #ccc;
+}
+.respuesta_row:first-child {
+    border-top: 0;
+}
+.respuesta_uinfo {
+    float: left;
+    background: #fbfbfb;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+}
+.uinfo_box {
+    margin: 10px 0 10px 0;
+    padding-top: 7px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    text-align: left;
+}
+.uinfo_box li {
+    margin-bottom: 7px;
+}
+.uinfo_box li b {
+    font-weight: bold;
+    display: inline-block;
+    width: 40px;
+    text-align: right;
+    padding-right: 5px;
+}
+.respuesta_uinfo .usuario:link,.respuesta_uinfo .usuario:visited {
+    display: block;
+    font-weight: bold;
+    color: #000;
+}
+.respuesta_uinfo .avatar {
+    display: inline-block;
+    position: relative;
+    margin-top: 7px;
+    padding: 3px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.respuesta_uinfo .grupo {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    padding: 6px;
+    background: url(../imagenes/img/foro/bg_grupo.png) no-repeat;
+}
+.respuesta_mensaje {
+    margin-left: 171px;
+    padding: 10px;
+    line-height: 20px;
+}
+.respuesta_head {
+    font-size: 11px;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    line-height: 14px;
+    color: #828282;
+    margin-bottom: 10px;
+}
+.respuesta_head a:link,.respuesta_head a:visited {
+    float: right;
+    height: 16px;
+    color: #000;
+    font-weight: bold;
+    padding-left: 20px;
+    line-height: 14px;
+    margin-left: 10px;
+}
+.respuesta_head .citar {
+    background: url(../imagenes/img/foro/citar.png) no-repeat;
+}
+.respuesta_head .reportar {
+    background: url(../imagenes/img/foro/reportar.png) no-repeat;
+}
+.respuesta_head .editar {
+    background: url(../imagenes/img/foro/editar_r.png) no-repeat;
+}
+.spoiler_box {
+    background: #fffdde;
+    border: 1px solid #ccb432;
+}
+.spoiler_box .spoiler_mostrar {
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.spoiler_box .spoiler_msg {
+    border-top: 1px solid #ccb432;
+    padding: 5px;
+}
+.icono-mod {
+    display: inline-block;
+    float: left;
+    margin-top: 2px;
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    background: url(../imagenes/img/foro/settings.png);
+}
+.icono-email {
+    display: inline-block;
+    width: 16px;
+    background: url(../imagenes/img/iconos/email.png) 0px 2px no-repeat;
+}
+.btit {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+.btit img {
+    vertical-align: text-bottom;
+}
+.medio {
+    width: 200px;
+}
+.form .form-tit {
+    display: inline-block;
+    width: 150px;
+    vertical-align: top;
+    line-height: 30px;
+}
+.form .form-txt {
+    display: inline-block;
+    margin-bottom: 5px;
+    line-height: 30px;
+}
+.generos td {
+    padding: 5px;
+}
+.cargando_mini {
+    background: url(../imagenes/img/loading_16.gif) no-repeat center;
+    height: 16px;
+    padding: 10px;
+}
+.cargando_medio {
+    background: url(../imagenes/img/loading_24.gif) no-repeat center;
+    height: 24px;
+    padding: 10px;
+}
+#facebook-login-btb {
+    font-size: 14px;
+    text-align: center;
+}
+#facebook-login-btb span {
+    font-weight: bold;
+}
+#facebook-login-btb a {
+    text-shadow: 0 0 2px rgba(0,0,0,0.3);
+    background: #839bc3;
+    background: linear-gradient(top,rgba(131,155,195,1) 50%,rgba(87,111,163,1) 100%);
+    background: -webkit-linear-gradient(top,rgba(131,155,195,1) 50%,rgba(87,111,163,1) 100%);
+    border: 1px solid #566383;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 0 #CADBFE inset,0 3px 0 0 #2D447F,0 4px 2px #999999;
+    color: #FFFFFF;
+    display: inline-block;
+    line-height: 30px;
+    height: 30px;
+    padding: 0 10px;
+    position: relative;
+    text-decoration: none;
+    top: -1px;
+    transition-property: top,box-shadow;
+    transition-duration: 0.1s,0.1s;
+    transition-timing-function: linear,linear;
+}
+#facebook-login-btb a:hover {
+    background-image: linear-gradient(top,rgba(139,161,199,1) 0%,rgba(96,119,170,1) 100%)}
+#facebook-login-btb a:active {
+    box-shadow: 0 1px 0 #cadbfe inset,0 1px 0 0 #2d447f,0 2px 2px #999999;
+    top: 2px;
+}
+#msg_registro {
+    background: #fff7f7 url(../imagenes/img/iconos/error.png) no-repeat 8px 8px;
+    padding: 10px;
+    padding-left: 30px;
+    border: 1px solid;
+    margin-bottom: 5px;
+    color: #b40e0e;
+}
+.info,.exito,.alerta,.error {
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding: 7px 10px 7px 35px;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+.info ul,.exito ul,.alerta ul,.error ul {
+    margin: 0;
+    line-height: 18px;
+    list-style: circle;
+    padding-left: 17px;
+}
+.exito {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image: url(../imagenes/img/ok.png);
+}
+.alerta {
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url(../imagenes/img/alerta.png);
+}
+.info {
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url(../imagenes/img/info.png);
+}
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url(../imagenes/img/error.png);
+}
+.clear {
+    clear: both;
+}
+.inicio_box {
+    background: url(../imagenes/img/bg_der.gif) repeat-y right;
+}
+.bloque_izq {
+    float: left;
+    width: 657px;
+    padding: 10px;
+}
+.bloque_izq h1 {
+    font-size: 16px;
+    font-weight: bolder;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+}
+.bloque_der {
+    float: right;
+    padding: 10px;
+    width: 300px;
+}
+.bloque_der h1 {
+    font-size: 14px;
+    font-weight: bolder;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    margin: -10px -10px 10px -10px;
+    line-height: 33px;
+    padding-left: 10px;
+    background: url(../imagenes/img/fondo_tit_der.png);
+    height: 33px;
+    color: #5b5b5b;
+}
+.tipo_0,.tipo_1,.tipo_2 {
+    width: 47px;
+    height: 15px;
+    float: right;
+    margin-top: 7px;
+}
+.tipo_0 {
+    background: url(../imagenes/img/a1.jpg);
+}
+.tipo_1 {
+    background: url(../imagenes/img/a2.jpg);
+}
+.tipo_2 {
+    background: url(../imagenes/img/a3.jpg);
+}
+.lista_simple {
+    margin: -10px;
+}
+.lista_simple a {
+    position: relative;
+    z-index: 50;
+}
+.lista_simple li {
+    overflow: hidden;
+    line-height: 30px;
+    background: #fcfcfc;
+    border-bottom: 1px dotted #ccc;
+}
+.lista_simple li:nth-child(even) {
+    background-color: #f5f5f5;
+}
+.lista_simple {
+    margin-bottom: 10px;
+}
+.lista_simple li a:link,.lista_simple li a:visited {
+    color: #000;
+    font-weight: bold;
+    display: block;
+    padding-left: 30px;
+}
+.lista_estrella li a {
+    background: url(../imagenes/img/iconos/estrella.png) 7px 5px no-repeat;
+}
+.lista_tv li a:link,.lista_tv li a:visited {
+    padding-left: 10px;
+}
+.lista_simple li:hover {
+    margin-top: -1px;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.bloque_der .ads_der {
+    position: relative;
+    z-index: 60;
+    margin-bottom: 20px;
+    background: #ccc;
+    width: 300px;
+    height: 250px;
+}
+.ultimos_epis {
+    margin-right: -10px;
+}
+.episodio_box_holder {
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin: 0 7px 10px 0;
+    width: 210px;
+    height: 136px;
+}
+.episodio_box {
+    position: absolute;
+    padding: 3px;
+}
+.episodio_box .like {
+    position: absolute;
+    bottom: 33px;
+    left: 6px;
+    height: 20px;
+    overflow: hidden;
+    visibility: hidden;
+}
+.episodio_box img {
+    width: 204px;
+    height: 102px;
+}
+.episodio_box .einfo {
+    margin: 3px -3px -3px -3px;
+    background: #ccc;
+    text-align: center;
+    width: 210px;
+    line-height: 27px;
+    height: 27px;
+    overflow: hidden;
+    background: url(../imagenes/img/bg_einfo.png);
+    border-top: 1px solid #ccc;
+    color: #8d8d8d;
+    text-shadow: 1px 1px #fff;
+    font-size: 11px;
+    font-weight: bold;
+}
+.anime_box {
+    background: url(../imagenes/img/bg_anime.png) repeat-y;
+}
+.anime_info {
+    float: left;
+    padding: 10px;
+    width: 185px;
+}
+.anime_info .ads {
+    position: relative;
+    z-index: 60;
+    margin: 10px 10px;
+    padding: 5px;
+    width: 160px;
+    background: #f3f3f3;
+}
+.anime_info .portada {
+    background: #fff;
+    padding: 1px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 180px;
+    height: 240px;
+}
+.anime_info .menu {
+}
+.anime_info .menu img {
+    vertical-align: text-bottom;
+    margin-right: 10px;
+}
+.anime_info .menu a:link,.anime_info .menu a:visited {
+    position: relative;
+    z-index: 60;
+    display: block;
+    color: #000;
+    font-weight: bold;
+    padding: 10px;
+    margin-right: -11px;
+}
+.anime_info .menu .actual {
+    border: 1px solid #ccc;
+    border-right: 0;
+    background: #fff;
+}
+.anime_cont {
+    padding: 10px;
+    margin-left: 206px;
+    line-height: 18px;
+}
+.anime_cont h1 {
+    font-size: 20px;
+    font-weight: bolder;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.anime_cont .sinopsis {
+    margin-bottom: 10px;
+}
+.anime_cont .tit,.sub_h1 {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bolder;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.anime_cont .tit .fecha_pr {
+    float: right;
+    font-size: 10px;
+}
+.anime_cont .alfabeto_box {
+    position: relative;
+    z-index: 60;
+    margin-top: -10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.anime_cont .alfabeto_box a:link,.anime_cont .alfabeto_box a:visited {
+    display: inline-block;
+    color: #000;
+    font-weight: bold;
+    padding: 8px 8px 9px 8px;
+}
+.anime_cont .alfabeto_box a:hover {
+    background: #fbfbfb;
+}
+.anime_cont .alfabeto_box a.actual {
+    background: #eee;
+}
+.anime_cont .generos_box {
+    position: relative;
+    z-index: 60;
+    margin-top: -10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.filtro_anime {
+    margin-top: -10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    height: 47px;
+    line-height: 47px;
+}
+.filtro_anime a {
+    position: relative;
+    z-index: 60;
+}
+.filtro_anime_lista {
+    margin-top: 5px;
+    display: block;
+    background: url(../imagenes/img/filtro_lista.png) no-repeat;
+    width: 16px;
+}
+.filtro_anime_bloques {
+    margin-top: 5px;
+    display: block;
+    background: url(../imagenes/img/filtro_bloques.png) no-repeat;
+    width: 16px;
+}
+.anime_cont .generos_box a:link,.anime_cont .generos_box a:visited {
+    display: inline-block;
+    color: #000;
+    font-weight: bold;
+    padding: 7px;
+}
+.anime_cont .generos_box a:hover {
+    background: #fbfbfb;
+}
+.anime_cont .generos_box a.actual {
+    background: #eee;
+}
+.aboxy_lista {
+    height: 164px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-right: 20px;
+    padding: 10px;
+    margin: -11px 10px 10px -10px;
+}
+.aboxy_lista a {
+    position: relative;
+    z-index: 60;
+}
+.aboxy_lista .generos_links {
+    font-size: 11px;
+    padding-bottom: 6px;
+}
+.aboxy_lista .generos_links a:link,.aboxy_lista .generos_links a:visited {
+    color: #069;
+}
+.aboxy_lista:nth-child(odd) {
+    background: #fbfbfb;
+}
+.aboxy_lista .portada {
+    position: relative;
+    z-index: 60;
+    float: left;
+    width: 120px;
+    height: 160px;
+    border-radius: 4px;
+    padding: 1px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+.aboxy_lista .titulo:visited,.aboxy_lista .titulo:link {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #ccc;
+    margin-left: 130px;
+    margin-bottom: 5px;
+
+}
+.serie_estado_1 {
+    color: green;
+}
+.serie_estado_0,.serie_estado_2 {
+    color: red;
+}
+.relacionados a:link,.relacionados a:visited {
+    position: relative;
+    z-index: 60;
+    color: #09C;
+}
+.relacionados li {
+    list-style: none;
+}
+.ainfo a:link,.ainfo a:visited {
+    position: relative;
+    z-index: 60;
+    color: #09C;
+}
+.anime_episodios {
+    margin-top: 7.5px;
+}
+.anime_episodios li {
+    width: auto;
+    color: #585858;
+    text-shadow: #FFF 0 1px 0;
+    border-bottom: 1px dashed #d2d2d2;
+    line-height: 20px;
+    position: relative;
+    list-style: none;
+    -webkit-transition: all 300ms ease-in-out;
+}
+.anime_episodios li: last-child {
+    border-bottom: 0;
+}
+.anime_episodios li a {
+    position: relative;
+    z-index: 60;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    text-shadow: #fff 0 1px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px 85px 5px 26px;
+}
+.anime_episodios li:hover {
+    background-color: #edf4ff;
+}
+.anime_episodios li a: :before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #ffc3c3;
+    position: absolute;
+    left: 10px;
+    vertical-align: middle;
+    top: 11px;
+    box-shadow: rgba(0,0,0,0.541176) 0 1px 3px inset,#FFF 0 1px 0;
+}
+.anime_episodios li a:visited {
+    display: block;
+}
+.anime_episodios li a:visited: :before {
+    background: #b8ec90;
+}
+.epi_ant {
+    display: block;
+    background: url(../imagenes/img/epi_anterior.png) -3px;
+    width: 20px;
+    height: 20px;
+}
+.epi_sig {
+    display: block;
+    background: url(../imagenes/img/epi_siguiente.png);
+    width: 20px;
+    height: 20px;
+}
+.epi_cont {
+    background: url(../imagenes/img/bg_episodio.png) repeat-y;
+}
+.menu_epi {
+    float: left;
+    padding: 10px;
+    width: 165px;
+}
+.menu_epi img {
+    vertical-align: text-bottom;
+    margin-right: 7px;
+}
+.menu_epi .opt {
+    position: relative;
+    z-index: 60;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    color: #000;
+    font-weight: bold;
+}
+.menu_epi .actual {
+    border: 1px solid #ccc;
+    border-right: 0;
+    background: #fff;
+    margin-right: -11px;
+}
+.epi_box {
+    margin-left: 185px;
+    padding: 10px;
+}
+.epi_box ul.opvid {
+    position: relative;
+    z-index: 60;
+    border-bottom: 3px solid #fc8000;
+}
+.idioma_sel {
+    position: relative;
+    z-index: 61;
+    height: 35px;
+    border-radius: 0;
+    border: 3px solid #fc8000;
+    width: 140px;
+}
+#video_player {
+    position: relative;
+    z-index: 60;
+    color: #fff;
+	border:1px solid;
+}
+#a_player {
+    background: #000;
+    width: 775px;
+    height: 463px;
+    padding: 10px;
+    margin-top: 5px;
+}
+.epi_box ul.opvid li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    font-weight: bold;
+}
+.epi_box ul.opvid .actual {
+    background: #fc8000;
+    color: #fff;
+}
+.epi_box .avatar {
+    width: 48px;
+    height: 48px;
+    background: #fff;
+    border: 1px solid #ccc;
+    float: left;
+    margin-right: 10px;
+    padding: 1px;
+}
+.epi_box .detalles li {
+    display: inline-block;
+    width: 230px;
+    line-height: 25px;
+}
+.epi_box .opcion {
+    position: relative;
+    z-index: 60;
+    background: #fff;
+    padding: 5px;
+    line-height: 18px;
+    cursor: pointer;
+}
+.epi_box .opcion a {
+    display: block;
+    color: #000;
+}
+.epi_box .opcion:nth-child(even) {
+    background: #fbfbfb;
+}
+.epi_box .opcion:hover {
+    background: #eee;
+}
+.epi_box .opcion .server {
+    margin-top: 10px;
+    float: left;
+    margin-right: 7px;
+    width: 16px;
+    height: 16px;
+}
+.epi_box .opcion span {
+    display: block;
+    color: #666666;
+}
+.epi_box .opcion .password {
+    float: right;
+    background: #ffffd5 url(../../../../imagenes/img/i16/003.png) 8px 8px no-repeat;
+    padding: 8px 8px 8px 30px;
+    border: 1px solid #e3b245;
+    font-weight: bold;
+    color: #ae7800;
+    border-radius: 4px;
+}
+.info_icon {
+    float: left;
+    margin-right: 10px;
+}
+.pagin {
+    position: relative;
+    z-index: 60;
+    display: inline-block;
+    background: #e9e9e9;
+    border-radius: 4px;
+    box-shadow: inset 0px 1px 0px rgba(255,255,255,.8),0px 1px 3px rgba(0,0,0,.1);
+    border: solid 1px #c0c0c0;
+}
+.pagin *:first-child {
+    border-left: 0!important;
+}
+.pagin a:link,.pagin a:visited,.pagin .actual,.pagin span {
+    display: inline-block;
+    padding: 0px 10px;
+    line-height: 28px;
+    height: 28px;
+    border-left: 1px solid #c0c0c0;
+    font-size: .875em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #717171;
+    text-shadow: 0px 1px 0px rgba(255,255,255,1);
+}
+.pagin a:hover {
+    background: #fefefe;
+    background: -webkit-gradient(linear,0% 0%,0% 100%,from(#FEFEFE),to(#f0f0f0));
+    background: -moz-linear-gradient(0% 0% 270deg,#FEFEFE,#f0f0f0);
+}
+.pagin span {
+    display: inline-block;
+}
+.pagin .actual {
+    background: #616161;
+    color: #f0f0f0;
+    text-shadow: 0px 0px 3px rgba(0,0,0,.5);
+}
+.caja {
+    border: 1px solid #ccc;
+}
+.caja .titulo {
+    background: #000;
+    color: #FFF;
+    padding: 10px;
+    font-weight: bold;
+}
+.caja .cont {
+    background: #fff;
+    padding: 10px;
+}
+.caja1 {
+    background: #fafafa;
+    border: 1px solid #efefef;
+    padding: 10px;
+}
+.caja_registro {
+    float: right;
+    width: 468px;
+    border-left: 2px solid #efefef;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+.caja_conectate {
+    float: left;
+    width: 468px;
+}
+.titulo1 {
+    font-size: 16px;
+    font-weight: bolder;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+}
+.sub_menu {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 7px;
+    text-align: center;
+    font-weight: bold;
+}
+.sub_menu a {
+    color: #000!important;
+}
+.vacio_box {
+    padding: 10px;
+    text-align: center;
+}
+.mensajes_box {
+    margin-top: -8px;
+}
+.mensaje_row {
+    margin-top: -1px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    min-height: 50px;
+}
+.mensaje_row .linea {
+    display: block;
+}
+.mensaje_row .opciones {
+    float: right;
+}
+.mensaje_row .avatar {
+    width: 48px;
+    height: 48px;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 1px;
+    background: #fff;
+    margin-right: 10px;
+}
+.mensaje_row .mensaje_head {
+    display: block;
+    margin-bottom: 3px;
+}
+.mensaje_row .mensaje_head a {
+    color: #fb7f00!important;
+    font-weight: bold;
+    font-size: 14px;
+}
+.mensaje_row .mensaje_head span {
+    float: right;
+    font-size: 10px;
+    color: #666;
+}
+.sin-leer {
+    background: #f7f7f7;
+}
+.dropdown .nuevos {
+    margin: 10px -5px 0px -0px;
+    display: block;
+    height: 8px;
+    line-height: 8px;
+    float: right;
+    background: red;
+    font-size: 8px;
+    color: #fff;
+    padding: 3px;
+    border-radius: 25%;
+}
+.head_notif {
+    display: inline-block;
+    background: url(../imagenes/img/notif.png) 0px 2px no-repeat;
+    height: 20px;
+    width: 16px;
+    margin: 0 -5px 0 -5px;
+}
+.head_msgs {
+    display: inline-block;
+    background: url(../imagenes/img/mensajes.png) 0px 2px no-repeat;
+    height: 20px;
+    width: 16px;
+    margin: 0 -5px 0 -5px;
+}
+.head_amigos {
+    display: inline-block;
+    background: url(../imagenes/img/amigos.png) 0px 2px no-repeat;
+    height: 20px;
+    width: 16px;
+    margin: 0 -5px 0 -5px;
+}
+.drop-amigos {
+    width: 240px;
+}
+.drop-amigos li {
+    border-bottom: 1px solid #e5e5e5;
+}
+.drop-amigos li: last-child {
+    border-bottom: 0;
+}
+.drop-nada {
+    padding: 10px;
+    text-align: center;
+}
+.drop-boton {
+    text-align: center;
+    margin-bottom: -5px;
+    background: #e2e2e2;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    overflow: hidden;
+}
+.drop-boton a {
+    color: #252525!important;
+    font-weight: bold!important;
+}
+.drop-boton a:hover {
+    background: #eaeaea!important;
+    color: #000!important;
+}
+.req_amigo {
+    margin: 0px -10px 0px -10px;
+    line-height: 18px;
+}
+.req_amigo img {
+    float: left;
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin-right: 10px;
+}
+.req_amigo b {
+    display: block;
+}
+.vp_head {
+    background: #fafafa;
+    padding: 7px;
+    position: relative;
+}
+.vp_head .avatar {
+    background: #fff;
+    padding: 1px;
+    border: 1px solid #ccc;
+    float: left;
+    margin-right: 7px;
+}
+.vp_head .usuario {
+    font: 300 26px/1.3 Helvetica,Arial,sans-serif;
+    display: block;
+    margin-bottom: 10px;
+}
+.vp_head .menu {
+    position: absolute;
+    bottom: 0;
+    left: 118px;
+}
+.vp_head .menu img {
+    vertical-align: text-bottom;
+    margin-right: 3px;
+}
+.vp_head .menu a:link,.vp_head .menu a:visited {
+    position: relative;
+    z-index: 60;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+    display: inline-block;
+    color: #000;
+    font-weight: bold;
+}
+.vp_head .menu .actual:link,.vp_head .menu .actual:visited {
+    background: #fff;
+    margin-bottom: -1px;
+    border-bottom: 1px solid #fff;
+}
+.vp_h1 {
+    background: url(../imagenes/img/back.gif) repeat-x;
+    height: 15px;
+    margin-bottom: 10px;
+    width: 680px;
+}
+.vp_h1 span {
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    text-transform: uppercase;
+    height: 15px;
+    float: left;
+    background: #fefefe;
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 15px;
+    padding: 0 10px 0 10px;
+}
+.vp_usuario .mini-bloque {
+    float: right;
+    width: 250px;
+}
+.acerca {
+    margin-bottom: 20px;
+}
+.mini-bloque {
+    background: #fafafa;
+}
+.mini-bloque-head {
+    background: #dbe8ec;
+    padding: 10px;
+    font-weight: bold;
+}
+.mini-bloque-cont {
+    padding: 10px;
+}
+dt {
+    font-weight: bold;
+}
+.dl-horizontal {
+    *zoom: 1;
+}
+.dl-horizontal:before,.dl-horizontal:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.dl-horizontal:after {
+    clear: both;
+}
+.dl-horizontal dt {
+    line-height: 20px;
+    float: left;
+    width: 120px;
+    clear: left;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.dl-horizontal dd {
+    line-height: 20px;
+    margin-left: 130px;
+}
+.tipsy {
+    font-size: 10px;
+    position: absolute;
+    padding: 5px;
+    z-index: 60000;
+}
+.tipsy-inner {
+    background-color: #000;
+    color: #FFF;
+    max-width: 200px;
+    padding: 5px 8px 4px 8px;
+    text-align: center;
+}
+.tipsy-inner {
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.tipsy-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border: 5px dashed #000;
+}
+.tipsy-arrow-n {
+    border-bottom-color: #000;
+}
+.tipsy-arrow-s {
+    border-top-color: #000;
+}
+.tipsy-arrow-e {
+    border-left-color: #000;
+}
+.tipsy-arrow-w {
+    border-right-color: #000;
+}
+.tipsy-n .tipsy-arrow {
+    top: 0px;
+    left: 50%;
+    margin-left: -5px;
+    border-bottom-style: solid;
+    border-top: none;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+.tipsy-nw .tipsy-arrow {
+    top: 0;
+    left: 10px;
+    border-bottom-style: solid;
+    border-top: none;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+.tipsy-ne .tipsy-arrow {
+    top: 0;
+    right: 10px;
+    border-bottom-style: solid;
+    border-top: none;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+.tipsy-s .tipsy-arrow {
+    bottom: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-top-style: solid;
+    border-bottom: none;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+.tipsy-sw .tipsy-arrow {
+    bottom: 0;
+    left: 10px;
+    border-top-style: solid;
+    border-bottom: none;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+.tipsy-se .tipsy-arrow {
+    bottom: 0;
+    right: 10px;
+    border-top-style: solid;
+    border-bottom: none;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+.tipsy-e .tipsy-arrow {
+    right: 0;
+    top: 50%;
+    margin-top: -5px;
+    border-left-style: solid;
+    border-right: none;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+.tipsy-w .tipsy-arrow {
+    left: 0;
+    top: 50%;
+    margin-top: -5px;
+    border-right-style: solid;
+    border-left: none;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+.aboxy_cont {
+    width: 170px;
+    height: 225px;
+    float: left;
+    -moz-box-shadow: 2px 2px 2px #888;
+    -webkit-box-shadow: 2px 2px 2px #888;
+    box-shadow: 2px 5px 2px #888;
+    margin: 0px 20px 20px 2px;
+    position: relative;
+    z-index: 60;
+}
+.aboxy {
+    position: absolute;
+    border: 1px solid #000;
+    background: #fff;
+    padding: 1px;
+}
+.aboxy h1 {
+    border: 0;
+}
+.aboxy img {
+    width: 170px;
+    height: 225px}
+.aboxy div {
+    width: 170px;
+    height: 30px;
+    filter: alpha(opacity=80);
+    opacity: .80;
+    position: absolute;
+    background: #000;
+    color: #fff;
+    bottom: 1px;
+}
+.aboxy span {
+    position: absolute;
+    bottom: 1px;
+    height: 30px;
+    width: 170px;
+    text-align: center;
+    line-height: 30px;
+}
+.aboxy span a {
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+}
+.reciente_box {
+    float: left;
+    position: relative;
+    z-index: 999;
+    background: #fff;
+    border: 1px solid #cbcbcb;
+    width: 204px;
+    height: 130px;
+    padding: 3px;
+    margin-right: 14px;
+    margin-bottom: 14px;
+    -moz-box-shadow: 2px 2px 6px #888;
+    -webkit-box-shadow: 2px 2px 6px #888;
+    box-shadow: 2px 2px 6px #888;
+}
+.reciente_box img {
+    width: 204px;
+    height: 102px}
+.reciente_box .xd,.reciente_box .xd:visited {
+    display: block;
+    margin: -3px;
+    margin-top: 3px;
+    font-size: 12px;
+    border-top: 1px solid #cbcbcb;
+    line-height: 27px;
+    text-align: center;
+    height: 27px;
+    color: #68787f;
+    text-shadow: #fff 1px 1px;
+    background: #ececec url('../imagenes/img/fondito.png') repeat-x;
+    text-decoration: none}
+.reciente_box a:hover {
+    color: #000;
+}
+.reciente_box iframe {
+    position: absolute;
+    z-index: 1000;
+    bottom: 30px;
+    left: 3px}
+.abso {
+    position: absolute;
+    width: 204px;
+    height: 130px}
+.noticias_box {
+    background: url(../imagenes/img/bg_noticias.png) right repeat-y;
+}
+.noticias_der {
+    float: right;
+    padding: 10px;
+    width: 280px;
+}
+.noticias_der .menu {
+}
+.noticias_der .menu img {
+    vertical-align: text-bottom;
+    margin-right: 10px;
+}
+.noticias_der .menu a:link,.anime_info .menu a:visited {
+    display: block;
+    color: #000;
+    font-weight: bold;
+    padding: 10px;
+    margin-right: -11px;
+}
+.noticias_der .menu .actual {
+    border: 1px solid #ccc;
+    border-right: 0;
+    background: #fff;
+}
+.noticias_cont {
+    padding: 10px;
+    margin-right: 301px;
+    line-height: 18px;
+}
+.noticia_box {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    margin: -11px -10px 10px -10px;
+}
+.noticia_box:nth-child(even) {
+    background: #fbfbfb;
+}
+.noticia_box .portada {
+    float: left;
+    width: 120px;
+    height: 160px;
+    border-radius: 4px;
+    padding: 1px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+.noticia_box .titulo:visited,.noticia_box .titulo:link {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+#buscar_txt {
+    height: 34px;
+    width: 640px;
+}
+#buscar_btn {
+    position: relative;
+    z-index: 60;
+}
+#refinar_busqueda {
+    font-family: "Lucida Grande",Arial,sans-serif;
+    padding-left: 10px;
+    margin-left: -10px;
+    margin-right: -12px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+#refinar_busqueda .bloque_refinar {
+    position: relative;
+    z-index: 60;
+    float: left;
+    width: 184px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+#refinar_busqueda .titulo_bloque {
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #aeaeae;
+}
+#refinar_busqueda .contenido_bloque {
+    height: 140px;
+    overflow: hidden;
+}
+#refinar_busqueda .contenido_bloque li {
+    list-style: none;
+    padding: 5px;
+    cursor: pointer;
+}
+#refinar_busqueda .contenido_bloque li.actual {
+    background: #4388bd url(../imagenes/img/check.png) no-repeat 155px 5px!important;
+    color: #fff;
+}
+#refinar_busqueda .contenido_bloque li:hover {
+    background: #F8F8F8;
+}
+.jsonSuggest {
+    position: relative;
+    z-index: 101;
+    font-size: 11px;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+	top: 40px;
+	left: 770px;
+	width: 220px;
+	z-index: 999;
+	display: none;
+	height: auto;
+	border: 1px solid rgb(165, 172, 178);
+}
+.suggest-element {
+    border-bottom: 1px solid #ccc;
+}
+.suggest-element: last-child {
+    border-bottom: 0;
+}
+.suggest-element a {
+    display: block;
+    padding: 5px;
+    height: 40px;
+    cursor: pointer;
+    width: 210px;
+    color: #000!important;
+}
+.suggest-hover {
+    background: #fcfcfc;
+}
+.suggest-element small {
+    height: 20px;
+    line-height: 20px;
+}
+.suggest-element .tx {
+    height: 20px;
+    line-height: 20px;
+    width: 140px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.suggest-element img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    margin-right: 5px;
+    float: left;
+}
+.bloque_pos {
+    position: absolute;
+    z-index: 80;
+}
+.bloque_ads {
+    position: absolute;
+    top: 100px;
+    left: 240px;
+    width: 300px;
+    height: 250px;
+    background: #494949;
+    border: 3px solid #2f2f2f;
+    border-radius: 4px;
+}
+.cerrar_bloque_ads,.cerrar_bloque_ads2 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url(../imagenes/img/close.png) no-repeat;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.cerrar_bloque_ads {
+    top: 5px;
+    right: 5px;
+}
+.cerrar_bloque_ads2 {
+    top: 5px;
+    left: 5px;
+}
+#ext-chrome {
+    width: 100%;
+    background: #254d80;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999999;
+}
+#ext-chrome #eliminar {
+    float: right;
+    padding: 3px 5px;
+    background: #000;
+    margin: 10px 10px 0 0;
+    border-radius: 4px;
+}
+#ext-chrome #eliminar {
+    color: #fff;
+    font-size: 14px;
+}
+#ext-chrome-centro {
+    width: 990px;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-size: 14px;
+    text-align: center;
+}
+#ext-chrome-centro a {
+    color: #fff;
+    text-shadow: 0 1px 0 black;
+}

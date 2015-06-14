@@ -1,0 +1,18 @@
+Version php Animeflv
+Por: jeancarsas
+Email: jeancarsas@gmail.com
+Web: animedroide.com
+Basado en Animeid Clon
+
+
+--------------------------
+jquery lazy ()
+Lazy Load, es un plugin de jQuery escrito en JavaScript que retrasa la carga de imágenes. Usando este complemento en páginas web largas que contengan muchas imágenes se logra que la carga de la página sea más rápida.
+http://www.appelsiini.net/projects/lazyload
+-------------------------
+
+--------------------------
+jquery.mCustomScrollbar.concat.min.js
+Scroll para información anime
+http://manos.malihu.gr/jquery-custom-content-scroller/
+--------------------------

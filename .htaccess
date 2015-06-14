@@ -1,0 +1,30 @@
+RewriteEngine On
+
+Options -Indexes
+
+<FilesMatch "(.*)">
+Order Allow,Deny
+Allow from all
+Deny from env=spam_ref
+</FilesMatch>
+
+#inicio
+# fin
+
+#ErrorDocument 404 /?ref=404
+#ErrorDocument 403 /?ref=403
+
+Rewriterule ^radio/$ radio.php [QSA,L]
+Rewriterule ^foro/$ foro.php [QSA,L]
+
+Rewriterule ^animes/$ anime_lg.php [QSA,L]
+
+Rewriterule ^rss/$ rss.php [QSA,L]
+
+Rewriterule ^buscar/$ buscar.php?url=$1 [QSA,L]
+RewriteRule ^ver/([a-z-0-9_-]+)-(.*)$ anime_ver.php?anime=$1&episodio=$2 [QSA]
+RewriteRule ^anime/([a-z-0-9_-]+)$ anime_info.php?id=$1 [QSA]
+
+RewriteRule ^letra/([a-z-0-9_-]+)$ anime_lg.php?tipo=letra&buscar=$1 [QSA]
+RewriteRule ^genero/([a-z-0-9_-_+]+)$ anime_lg.php?tipo=genero&buscar=$1 [QSA]
+RewriteRule ^buscar/([a-z-A-Z-0-9_-_+_\ ]+)$ anime_lg.php?tipo=buscador&buscar=$1 [QSA]

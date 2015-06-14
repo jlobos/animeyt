@@ -1,0 +1,9 @@
+Primeros pasos
+- Ingresar los datos de la base de datos en config/config.php y en conexion.php
+- Definir la URL de la página en config.php linea 10 ($pagina)
+- Tambien habia que especificar la base de datos en la linea 30 de pagina.php y en la linea 31 de anime_lg.php
+- En config.php en las lineas 26 y 39 cambiar animedroide.com por el dominio que se usará en el proyecto definitivo
+
+
+Error al imprimir el h1
+-
