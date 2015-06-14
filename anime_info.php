@@ -49,7 +49,7 @@ include('incluir/cabecera.php');
     <li><b>Tipo:</b> <?=$crow['Categoria']?></li>
     <li><b>Estado:</b> <span class="serie_estado_1"><? if($crow['Estado']==0){echo 'Finalizada';}else{echo 'En emisión';}?></span></li>
     <li><b>Generos:</b>
-        <?
+        <?php
         $arraygeneros = explode(',', str_replace('.','',$crow['Generos']) );
         $eachurl_total = count($arraygeneros);
         $totalxd='0';
@@ -66,9 +66,9 @@ include('incluir/cabecera.php');
 
 	<br>
 	
-	<div class="relacionados">
-<?php	 	        
-$jm = @mysql_query("SELECT Nombre, Url, Categoria FROM series_anime WHERE Nombre like '%".substr($crow['Nombre'],0,5)."%' ORDER BY Codigo ASC") or die("Query failed : " . mysql_error());
+    <div class="relacionados">
+<?php
+$jm = @mysql_query("SELECT Nombre, Url, Categoria FROM $SQL_Base.series_anime WHERE Nombre like '%".substr($crow['Nombre'],0,5)."%' ORDER BY Codigo ASC") or die("Query failed : " . mysql_error());
 while($jma=@mysql_fetch_array($jm)){
 if (strlen($jma['Nombre']) >13){$puntos='&hellip;';}else{$puntos='';}
 $linkcap=$urlpath.'anime/'.$jma['Url'];
@@ -76,12 +76,9 @@ $categoriax = $jma['Categoria'];
 $find = array('Pelicula', 'Ova', 'Anime');
 $repl = array('Pelicula', 'Ova', 'Anime');
 $categoria = str_replace ($find, $repl, $categoriax);
-
 echo '<li><span style="display:none;">'.$contador.'</span><b>Relacionado</b>: <a href="'.$linkcap.'">'.$jma['Nombre'].'</a> ('.$categoria.')</li>';
-
-	
 }
-?>    
+?>
     </div>
 
 	<div class="tit">Listado de episodios 
@@ -127,15 +124,15 @@ if(@mysql_num_rows($queryepisodiosx)==0){
 
 	<div class="tit">Proximos Episodios</div>
     <ul class="anime_episodios">
-    <? if($crow['Estado']==1 ){?>
-	<?
+    <?php if($crow['Estado']==1 ){?>
+	<?php
 	$lastepisode = @mysql_query("SELECT NumEpisodio, IF(NumEpisodio REGEXP '^[[:alpha:]]',NumEpisodio,LPAD(FORMAT(NumEpisodio,4),10,'0')) AS scene_sort FROM $SQL_Base.episodios_anime Where CodSerie='".$crow['Codigo']."' ORDER BY scene_sort DESC LIMIT 1;",$conwb)   or die(mysql_error());
 	$lastepisode=@mysql_result($lastepisode,0,'NumEpisodio');
 	for($i=$lastepisode+1;$i<$lastepisode+2;$i++){
 	?>
         <li><a href="/">Capítulo <?=$i?>: </a></li>
-	<? }// fin del for()?>
-    <? } ?>
+	<?php }// fin del for()?>
+    <?php } ?>
     </ul>
     
 </div>

@@ -176,7 +176,7 @@ include('incluir/cabecera.php');
         
 <!-- h1 -->
 <h1 class="title q">
-<? 
+<?php 
 $conwb = @mysql_connect($SQL_Host,$SQL_User,$SQL_Pass);
 @mysql_query("SET NAMES 'utf8'");
 
@@ -302,7 +302,7 @@ if($imgremota=='si' && $fja['Imagen2']!==NULL){
 </a>
 <div>
 </div>
-<span><h1><a href="<?=$urlserie?>" title="<?=$fja['Nombre']?>"><?=$fja['Nombre']?></a></h1></span>
+<h1><a href="<?=$urlserie?>" title="<?=$fja['Nombre']?>"><?=$fja['Nombre']?></a></h1>
 </div>
 </div>
 <!-- fin portada item -->

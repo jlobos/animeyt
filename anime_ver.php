@@ -53,7 +53,7 @@ if($imgremota=='si' && mysql_result($serieinfo,0,'Imagen2')!==NULL){$portada=mys
 
         <div class="episodio_titulo">
 	<!-- Anterior -->
-	<?
+	<?php
     $total_episodios = mysql_query("SELECT NumEpisodio from $SQL_Base.episodios_anime where CodSerie='".mysql_result($serieinfo,0,'Codigo')."' order by NumEpisodio+0 Desc Limit 1",$conwb)   or die(mysql_error());
     $total_episodios=@mysql_result($total_episodios,0,'NumEpisodio');
     if( ($video_nepi-1) <=0 ){}
@@ -64,7 +64,7 @@ if($imgremota=='si' && mysql_result($serieinfo,0,'Imagen2')!==NULL){$portada=mys
     <!-- Anterior -->
 
     <!-- Siguiente -->
-	<?
+	<?php
     $total_episodios = mysql_query("SELECT NumEpisodio from $SQL_Base.episodios_anime where CodSerie='".mysql_result($serieinfo,0,'Codigo')."' order by NumEpisodio+0 Desc Limit 1",$conwb)   or die(mysql_error());
     $total_episodios=@mysql_result($total_episodios,0,'NumEpisodio');
     if( ($video_nepi+1) <= $total_episodios ){
@@ -167,7 +167,7 @@ if($imgremota=='si' && mysql_result($serieinfo,0,'Imagen2')!==NULL){$portada=mys
 </div>
 <!-- sub bloque -->
 
-<?
+<?php
 }
 if(mysql_num_rows($getvideoinfo)==0){
 header("Location: ".$urlpath."?ref=404");
